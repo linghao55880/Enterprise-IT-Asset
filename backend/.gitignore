@@ -1,0 +1,19 @@
+# .NET build output
+bin/
+obj/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+*.env
+*.env.local
