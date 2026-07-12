@@ -1,0 +1,19 @@
+[build]
+  command = "pnpm install && pnpm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://enterprise-it-asset-production.up.railway.app/api/:splat"
+  status = 200
+  force = true
+
+  [redirects.headers]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET,POST,PUT,DELETE,OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type,Authorization"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

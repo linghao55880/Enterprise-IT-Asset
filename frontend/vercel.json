@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://it-asset-management-backend.up.railway.app/api/$1"
+      "destination": "https://enterprise-it-asset-production.up.railway.app/api/$1"
     }
   ],
   "headers": [
