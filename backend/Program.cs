@@ -32,6 +32,9 @@ app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
+// Health check endpoint for Railway
+app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
+
 // Serve static files from wwwroot
 app.UseDefaultFiles();
 app.UseStaticFiles();
